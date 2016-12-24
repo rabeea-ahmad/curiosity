@@ -39,7 +39,7 @@ function sendMessage(recipientId, text) {
 		method: 'POST',
 		json: {
 			recipient: {id: recipientId},
-			message: message
+			message: text
 		}
 	}, function(error, response, body) {
 		if (error) {
